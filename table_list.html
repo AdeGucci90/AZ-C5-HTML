@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Html Lists and Tables</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatable" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+     <!-- Add a Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+ <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      table-layout: right;
+    }
+
+    th, td {
+      border: 1px solid #0e0b0b;
+      text-align: center;
+      padding: 3px;
+    }
+    th {
+      background-color: #fffdfd;
+    }
+    caption {
+      border: 1px solid #0e0b0b;
+      padding: 0px;
+      caption-side: top; 
+  
+      }
+ </style>
+
+</head>
+<!-- Main content of the Assignment -->
+<body>
+ 
+    <h2>Assignment: HTML Lists and Tables</h2>
+    
+    <table>
+     <thead>
+        <caption><h4>Time Table</h4></caption>
+      <tr>
+        <th></th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+      </tr>   
+     </thead>
+      <tbody>
+       <tr>
+        <th rowspan="5">Hour</th>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Arts</td>
+       </tr> 
+       <tr>
+        <td>Social</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+        <td>Sports</td>
+       </tr>
+
+       <tr>
+        <th colspan="6">Lunch</th>  <!--this cell spans 5 columns--> 
+       </tr>
+       <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td rowspan="2">Project</td>  <!--this cell spans 2 rows-->
+       </tr>
+
+       <tr>
+        <td>Social</td>
+        <td>History</td>
+        <td>English</td>
+        <td>Social</td>
+       </tr>
+       
+      </tbody>
+    </table>
+<br>
+ <h3>PROJECTS</h3>
+  <ul type="square";>       <!--this added square bullets to the list-->
+    <p>List of intresting project titles:</p>
+    <li>E-commerce Website</li>
+    <li>Email Marketing</li>
+    <li>Website for a small business</li>
+    <li>Social Media Campaign</li>
+  </ul>
+<br>
+  <h3>HISTORY</h3>
+   <ol type="a">             <!--this added lower-case alphabets to the list-->
+    <p>List of three history topics:</p>
+     <li>Ancient Egypt: Pyramids and Pharaohs</li>
+     <li>The Roman Empire: Rise and Fall</li>
+     <li>The Dark Ages</li>
+   </ol>
+</body>
